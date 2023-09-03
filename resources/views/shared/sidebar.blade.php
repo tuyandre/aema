@@ -8,26 +8,26 @@
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="pages/widgets.html">
+        <a class="nav-link" href="{{route('admin.riders')}}">
             <i class="fa fa-users fa-2x" aria-hidden="true"></i>
           <span class="menu-title">Riders</span>
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="pages/forms/index.html">
+        <a class="nav-link" href="{{route('admin.drivers')}}">
             <i class="fa fa-car fa-2x" aria-hidden="true"></i>
           <span class="menu-title">Drivers</span>
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="pages/ui-elements/buttons.html">
+        <a class="nav-link" href="{{route('admin.ambulances')}}">
           {{-- <img src="{{asset('assets/images/icons/4.png')}}" alt=""> --}}
           <i class="fa fa-ambulance fa-2x" aria-hidden="true"></i>
           <span class="menu-title">Ambulances</span>
         </a>
       </li>
       <li class="nav-item">
-        <a style="color: blueviolet" class="nav-link" href="pages/tables/index.html">
+        <a style="color: blueviolet" class="nav-link" href="{{route('admin.tracks')}}">
             <i class="fa fa-history fa-2x" aria-hidden="true"></i>
           <span class="menu-title">Tracks</span>
         </a>
