@@ -1,5 +1,5 @@
 <nav class="bg-gray-100 sidebar sidebar-offcanvas" id="sidebar">
-   
+
     <ul class="nav">
       <li class="nav-item active">
         <a class="nav-link" href="{{url('dashboard')}}">
@@ -10,32 +10,40 @@
       <li class="nav-item">
         <a class="nav-link" href="{{route('admin.riders')}}">
             <i class="fa fa-users fa-2x" aria-hidden="true"></i>
-          <span class="menu-title">Riders</span>
+          <span class="menu-title">Customers</span>
         </a>
       </li>
+        <li class="nav-item">
+            <a style="color: blueviolet" class="nav-link" href="{{route('admin.rider.history')}}">
+                <i class="fa fa-history fa-2x" aria-hidden="true"></i>
+                <span class="menu-title">Customers History</span>
+            </a>
+        </li>
       <li class="nav-item">
         <a class="nav-link" href="{{route('admin.drivers')}}">
             <i class="fa fa-car fa-2x" aria-hidden="true"></i>
           <span class="menu-title">Drivers</span>
         </a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="{{route('admin.ambulances')}}">
-          {{-- <img src="{{asset('assets/images/icons/4.png')}}" alt=""> --}}
-          <i class="fa fa-ambulance fa-2x" aria-hidden="true"></i>
-          <span class="menu-title">Ambulances</span>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a style="color: blueviolet" class="nav-link" href="{{route('admin.tracks')}}">
-            <i class="fa fa-history fa-2x" aria-hidden="true"></i>
-          <span class="menu-title">Tracks</span>
-        </a>
-      <li class="nav-item">
-        <a class="nav-link" href="{{route('profile.edit')}}">
-          <img src="{{asset('assets/images/icons/10.png')}}" alt="">
-          <span class="menu-title">Settings</span>
-        </a>
-      </li>
+
+        <li class="nav-item">
+            <a style="color: blueviolet" class="nav-link" href="{{route('admin.driver.history')}}">
+                <i class="fa fa-history fa-2x" aria-hidden="true"></i>
+                <span class="menu-title">Driver History</span>
+            </a>
+        </li>
+{{--      <li class="nav-item">--}}
+{{--        <a class="nav-link" href="{{route('admin.pickup.history')}}">--}}
+{{--          --}}{{-- <img src="{{asset('assets/images/icons/4.png')}}" alt=""> --}}
+{{--          <i class="fa fa-ambulance fa-2x" aria-hidden="true"></i>--}}
+{{--          <span class="menu-title">Pickup Request</span>--}}
+{{--        </a>--}}
+{{--      </li>--}}
+{{--      <li class="nav-item">--}}
+{{--        <a style="color: blueviolet" class="nav-link" href="{{route('admin.tracks')}}">--}}
+{{--            <i class="fa fa-history fa-2x" aria-hidden="true"></i>--}}
+{{--          <span class="menu-title">Tracks</span>--}}
+{{--        </a>--}}
+{{--      </li>--}}
     </ul>
   </nav>

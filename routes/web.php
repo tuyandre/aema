@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\FirebaseController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -18,6 +19,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('auth.login');
 });
+Route::get('/test', function () {
+    return view('test');
+});
+
+Route::get('/test2', [FirebaseController::class, 'firebaseData'])->name('firebaseData.index');
 
 Route::get('/dashboard', function () {
     return view('home');
@@ -35,6 +41,9 @@ Route::middleware('auth')->group(function () {
     Route::get('/admin/drivers', [AdminController::class, 'getDrivers'])->name('admin.drivers');
     Route::get('/admin/ambulances', [AdminController::class, 'getAmbulances'])->name('admin.ambulances');
     Route::get('/admin/tracks', [AdminController::class, 'getTracks'])->name('admin.tracks');
+    Route::get('/admin/customer_history', [AdminController::class, 'getRiderHistory'])->name('admin.rider.history');
+    Route::get('/admin/driver_history', [AdminController::class, 'getDriverHistory'])->name('admin.driver.history');
+    Route::get('/admin/pickup_history', [AdminController::class, 'getPickupHistory'])->name('admin.pickup.history');
 });
 
 require __DIR__.'/auth.php';

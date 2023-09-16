@@ -6,10 +6,21 @@
     "license": "MIT",
     "require": {
         "php": "^8.1",
-        "guzzlehttp/guzzle": "^7.2",
+        "bensontrent/firestore-php": "^3.1",
+        "google/cloud-firestore": "^1.37",
+        "google/cloud-service-control": "^1.2",
+        "grpc/grpc": "^1.57",
+        "guzzlehttp/guzzle": "^7.8",
+        "illuminate/contracts": "*",
+        "illuminate/support": "*",
+        "kreait/firebase-php": "^7.6",
+        "kreait/laravel-firebase": "^5.3",
         "laravel/framework": "^10.10",
         "laravel/sanctum": "^3.2",
-        "laravel/tinker": "^2.8"
+        "laravel/tinker": "^2.8",
+        "ramsey/uuid": "^4.7",
+        "svk/yc-grpc-injector": "^0.0.1",
+        "symfony/cache": "^6.3"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",
