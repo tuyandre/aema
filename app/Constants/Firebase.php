@@ -1,6 +1,8 @@
 <?php
 
-namespace App;
+namespace App\Constants;
+
+use Illuminate\Support\Facades\Http;
 
 class Firebase
 {
@@ -20,5 +22,60 @@ class Firebase
     const RIDER_DATA='RidersInformation';
     const DRIVER_DATA='';
     const USER_DATA='';
+    public static function  getDriverData(){
+        $firebaseUrl = 'https://aema-a9a4b-default-rtdb.firebaseio.com/';
+        $nodePath = 'DriversInformation'; // Replace with the path to your data in Firebase
+
+        $response = Http::get("{$firebaseUrl}{$nodePath}.json");
+
+        if ($response->successful()) {
+            $data = $response->json();
+            return $data;
+
+        } else {
+            return response()->json(['error' => 'Failed to retrieve data from Firebase'], 500);
+        }
+    }
+    public static function getcustomerdata(){
+        $firebaseUrl = 'https://aema-a9a4b-default-rtdb.firebaseio.com/';
+        $nodePath = 'RidersInformation'; // Replace with the path to your data in Firebase
+
+        $response = Http::get("{$firebaseUrl}{$nodePath}.json");
+
+        if ($response->successful()) {
+            $data = $response->json();
+            return $data;
+
+        } else {
+            return response()->json(['error' => 'Failed to retrieve data from Firebase'], 500);
+        }
+    }
+    public static function getDriverHistory(){
+        $firebaseUrl = 'https://aema-a9a4b-default-rtdb.firebaseio.com/';
+        $nodePath = 'RiderHistory'; // Replace with the path to your data in Firebase
+
+        $response = Http::get("{$firebaseUrl}{$nodePath}.json");
+
+        if ($response->successful()) {
+            $data = $response->json();
+            return  $data;
+        } else {
+            return response()->json(['error' => 'Failed to retrieve data from Firebase'], 500);
+        }
+    }
+    public static function getCustomerHistory(){
+        $firebaseUrl = 'https://aema-a9a4b-default-rtdb.firebaseio.com/';
+        $nodePath = 'DriverHistory'; // Replace with the path to your data in Firebase
+
+        $response = Http::get("{$firebaseUrl}{$nodePath}.json");
+
+        if ($response->successful()) {
+            $data = $response->json();
+            return  $data;
+
+        } else {
+            return response()->json(['error' => 'Failed to retrieve data from Firebase'], 500);
+        }
+    }
 
 }

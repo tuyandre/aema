@@ -7,7 +7,7 @@
       <button class="navbar-toggler navbar-toggler d-none d-lg-block navbar-dark align-self-center mr-3" type="button" data-toggle="minimize">
         <span class="navbar-toggler-icon"></span>
       </button>
-    
+
       <ul class="navbar-nav ml-lg-auto d-flex align-items-center flex-row">
         <li class="nav-item">
           <a class="nav-link profile-pic" href="{{route('profile.edit')}}"><img class="rounded-circle" style="width: 45px" src="{{asset('assets/img/logo.png')}}" alt="">{{ Auth::user()->name }}</a>

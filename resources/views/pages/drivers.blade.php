@@ -31,6 +31,14 @@
                                 {{--                                    <th>Action</th>--}}
                             </tr>
                             </thead>
+                            <?php
+//                            $arrayData = json_decode($drivers, true);
+
+// Count the number of items in the array
+                            $itemCount = count($drivers);
+                                ?>
+                            {{$itemCount}}
+
                             <tbody>
                             @foreach ($drivers as $driver)
                                 <tr class="">

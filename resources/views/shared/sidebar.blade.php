@@ -32,18 +32,6 @@
                 <span class="menu-title">Driver History</span>
             </a>
         </li>
-{{--      <li class="nav-item">--}}
-{{--        <a class="nav-link" href="{{route('admin.pickup.history')}}">--}}
-{{--          --}}{{-- <img src="{{asset('assets/images/icons/4.png')}}" alt=""> --}}
-{{--          <i class="fa fa-ambulance fa-2x" aria-hidden="true"></i>--}}
-{{--          <span class="menu-title">Pickup Request</span>--}}
-{{--        </a>--}}
-{{--      </li>--}}
-{{--      <li class="nav-item">--}}
-{{--        <a style="color: blueviolet" class="nav-link" href="{{route('admin.tracks')}}">--}}
-{{--            <i class="fa fa-history fa-2x" aria-hidden="true"></i>--}}
-{{--          <span class="menu-title">Tracks</span>--}}
-{{--        </a>--}}
-{{--      </li>--}}
+
     </ul>
   </nav>
