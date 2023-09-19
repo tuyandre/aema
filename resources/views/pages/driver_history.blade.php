@@ -28,6 +28,7 @@
                                 <th>Driver Name</th>
                                 <th>Distance</th>
                                 <th>Start Location</th>
+                                <th>End Location</th>
                                 <th>Start Address</th>
                                 <th>EndD Address</th>
                                 <th>Times</th>

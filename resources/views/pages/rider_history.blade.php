@@ -29,6 +29,7 @@
                                 <th>Distance</th>
                                 <th>Start Location</th>
                                 <th>Start Address</th>
+                                <th>Start Address</th>
                                 <th>EndD Address</th>
                                 <th>Times</th>
                                 <th>Amount</th>
